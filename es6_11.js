@@ -36,7 +36,7 @@ console.log(yejin.info);
 console.log(Person.info_relationship(yewon, yejin));
 // 클래스는 호이스팅 되지 않으므로 반드시 선언 이후* 사용해야 함
 
-// 클래스에서 메소드를 선언할 때 function 키워들르 붙이지 않아도 됨.
+// 클래스에서 메소드를 선언할 때 function 키워드를 붙이지 않아도 됨.
 // 특정 함수에 키워드를 붙이면 클래스 객체에서 사용 가능한 메소드
 // => 프로토타입 메소드 선언 가능
 

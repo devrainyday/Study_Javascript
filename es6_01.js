@@ -1,6 +1,6 @@
 // var : function-scoped
 // immediately-invoked function expression (or IIFE, pronounced "iffy")
-// => function-scpre 인 것처럼 만들 수 있음. 하지만 'use strict' 가 있어야 완벽히 function-scope로 동작함
+// => function-scope 인 것처럼 만들 수 있음. 하지만 'use strict' 가 있어야 완벽히 function-scope로 동작함
 
 // let, const : block-scoped, 변수 재선언 불가능. const는 재할당도 불가능하지만 수정은 가능함
 

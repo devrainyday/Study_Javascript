@@ -21,7 +21,7 @@ window.a; // hello
   
 함수 컨텍스트 같은 경우는 좀 더 복잡하다. 각 함수는 자신의 VariableObject를 가지고 있지만,  
 Rhino를 사용하지 않는다면 보통은 접근할 수 없다.  
-각각의 함수가 이 객체를 가직 ㅗ있기 때문에 함수 컨텍스트 안에서 변수를 생성한다면 프로퍼티로서 참조할 수 없다.  
+각각의 함수가 이 객체를 가지고 있기 때문에 함수 컨텍스트 안에서 변수를 생성한다면 프로퍼티로서 참조할 수 없다.  
 
 ```javascript
 function foo() {
@@ -80,7 +80,7 @@ window.bar; //54
   반대로 단순한 프로퍼티 접근자는 부모 객체 상에서의 해시 룩업 결과를 반환할 것이다. (undefined)  
   
 - attribute initialization
-  모든 새로운 프로퍼티는 디폴트로 **프로퍼티 디스크립터**를 가진다.  
+  모든 새로운 프로퍼티는 디폴트로 **프로퍼티 디스크립터** 를 가진다.  
   그것은 몇몇 프로퍼티 속성을 정의한다. ([[value]]는 가장 명확하다)  
   ECMA3 내부 사용 목적의 속성 : {DontDelete}, {DontEnum}, {ReadOnly}
   ECMA5 : [[Writable]], [[Enumerable]], [[Configurable]] 으로 변경됨. 외부수정 가능
