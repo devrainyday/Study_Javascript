@@ -1,8 +1,7 @@
 /* 문자열을 받아 그 중에서 가장 빈도수가 많은 단일문자를 찾는 함수 */
 
 const countFrequency = str => {
-    let resultName = new Array();
-    let resultNum = new Array();
+    let result = new Array();
 
     let value;
     let resultValue;
@@ -17,39 +16,37 @@ const countFrequency = str => {
         
         // result 배열들에 아무 값이 없을 경우 for문이 정상적으로 작동하지 않으므로 따로 분리함
         if(i === 0) {
-            resultName.push(value);
-            resultNum.push(1);
+            result.push({v: value, cnt: 1});
         }
     
-        for(let j = 0; j < resultName.length; j++) {
-            resultValue = resultName[j];
+        for(let j = 0; j < result.length; j++) {
+            resultValue = result[j].v;
     
             if(value === resultValue) {
-                resultNum[j]++;
+                result[j].cnt++;
                 break;
             }
     
-            if(j === resultName.length-1) {
-                resultName.push(value);
-                resultNum.push(1);
+            if(j === result.length-1) {
+                result.push({v: value, cnt: 1});
             }
         }
     }
     
     let resultObject;
     
-    if(resultName.length > 0) {
+    if(result.length > 0) {
         resultObject = {
-            name: resultName[0],
-            num: resultNum[0]
+            value: result[0].v,
+            cnt: result[0].cnt
         };
     }
     
-    for(let i = 1; i < resultName.length; i++) {
-        if(resultObject.num < resultNum[i]) {
+    for(let i = 1; i < result.length; i++) {
+        if(resultObject.num < result[i].cnt) {
             reslutObject = {
-                name: resultName[i],
-                num: resultNum[i]
+                value: result[i].v,
+                cnt: result[i].cnt
             }
         }
     }
