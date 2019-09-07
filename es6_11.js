@@ -47,6 +47,7 @@ class Student extends Person{
         return this.introduce();
     }
     
+    // no error
     get info() {
         return this.introduce();
     }

@@ -15,7 +15,7 @@ let daughter = {
 let Yewon = Object.assign({}, parent, daughter);
 
 // 대상 객체(targer object), 출처 객체(source object)
-// => parent, daughter => daughter가 나중에 전달되었으므로 name,age 속성 값을ㅇ 덮어씌움
+// => parent, daughter => daughter가 나중에 전달되었으므로 name,age 속성 값을 덮어씌움
 
 console.log(Yewon);
 

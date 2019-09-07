@@ -4,7 +4,6 @@ let obj = {
     a: 1,
     b: 2,
     c: 3,
-    // return 이 없는 메소드인데도 예상대로 출력됨
     d() {
         console.log('d');
     }

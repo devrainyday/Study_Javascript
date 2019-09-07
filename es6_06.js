@@ -23,6 +23,8 @@ let athlete = {
     health // `health: health`
 }
 
+console.log(athlete);
+
 // 3) 중복된 속성키 값
 var a = {
     x: 1,

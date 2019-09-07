@@ -33,4 +33,5 @@ console.log(c_object);
 // cosnt 배열 내부 값 변경 가능
 const c_array = [1, 5, 6, 5];
 c_array.push(19);
+c_array[1] = 63;
 console.log(c_array);
