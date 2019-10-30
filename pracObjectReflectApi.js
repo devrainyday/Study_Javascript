@@ -27,8 +27,9 @@ function Person(first, last) {
     this.lastName = last;
 }
 const woni = Reflect.construct(Person, ['woni', '!']);
+console.log(woni);
 
-console.log(Reflect.has(fruitObj, 'value')); // true
+console.log(Reflect.has(fruitObj, 'value')); // false
 
 console.log(Reflect.deleteProperty(fruitObj, 'level')); // true
 console.log(fruitObj);

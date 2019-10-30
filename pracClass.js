@@ -40,3 +40,4 @@ class Author extends Person {
 const a1 = new Author('author', 'Jared M', 'Diamond', ['Guns, Germs, and Steel', 'Why is sex fun']);
 a1.introduceSelf();
 console.log(Person.isPerson(a1));
+a1.eat();
