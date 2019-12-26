@@ -4,34 +4,34 @@
 
 // let, const : block-scoped, 변수 재선언 불가능. const는 재할당도 불가능하지만 수정은 가능함
 
-var v_a = 'a';
+var vA = 'a';
 
-let l_a = 'a';
+let lA = 'a';
 
-var v_a = 'b';
+var vA = 'b';
 
-// let l_a = 'b';
+// let lA = 'b';
 
-const c_a = 'a';
+const cA = 'a';
 
-// c_a = 'b';
+// cA = 'b';
 
-console.log(v_a);
-console.log(l_a);
-console.log(c_a);
+console.log(vA);
+console.log(lA);
+console.log(cA);
 
 // const 객체 프로퍼티별 값 변경 가능
-const c_object =  {
+const cObject =  {
     name : 'good',
     age : 18
 };
 
-c_object.name = 'Kim';
+cObject.name = 'Kim';
 
-console.log(c_object);
+console.log(cObject);
 
 // cosnt 배열 내부 값 변경 가능
-const c_array = [1, 5, 6, 5];
-c_array.push(19);
-c_array[1] = 63;
-console.log(c_array);
+const cAarray = [1, 5, 6, 5];
+cAarray.push(19);
+cAarray[1] = 63;
+console.log(cAarray);

@@ -2,7 +2,7 @@
 // 대상 객체(target object)로의 속성을 복사할 때 사용
 
 let parent = {
-    name: 'MiYoung',
+    name: 'Parent',
     age: 43,
     sex: 'female'
 }

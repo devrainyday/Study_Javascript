@@ -18,9 +18,9 @@ console.log(Reflect.get(fruitArr, 0));
 Reflect.set(fruitObj, 'level', {'min': 2, 'max': 6});
 console.log(JSON.stringify(fruitObj));
 
-const multipleSelf = (a) => a*a;
+const multipleSelf = (a) => a * a;
 console.log(Reflect.apply(multipleSelf, null, [5]));
-// 두 번째 인자는 함수의 this 를 바꾸고 싶을 때 사용함
+// 두 번째 인자는 함수의 this를 바꾸고 싶을 때 사용함
 
 function Person(first, last) {
     this.firstName = first;

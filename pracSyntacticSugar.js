@@ -11,14 +11,15 @@ let a = '';
 let b = null;
 let c = 'it is c';
 let d = 5;
-console.log(a || 'a는 false의 성질을 띄고 있습니다');
+console.log(a || b || 'a는 false의 성질을 띄고 있습니다'); // 처음으로 true 성질을 띤 값
 let notFalse = a || b || c || d;
 console.log(notFalse);
 
 // && - true 성질을 띄는 것
 // 주로 필수 조건을 의미할 때 쓰인다
-let notTrue = a && b && c && d;
-console.log(notTrue); // 안 나오는 것처럼 보이지만 공백이다
+let notTrue = c && d && b && a;
+console.log(notTrue); // null - 처음으로 false 성질을 띤 값
+// a, b, c, d 순서: 안 나오는 것처럼 보이지만 공백이다
 
 // 현재 시간을 밀리초단위 숫자로 변환 => 빠른 시간 계산 때 유용
 // 세 방법 모두 같은 값을 나타낸다

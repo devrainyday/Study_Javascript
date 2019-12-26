@@ -7,20 +7,19 @@ let tree = {
     height: 10,
     color: 'green',
     grow() {
-        this.height += 2;
+      this.height += 2;
     }
 };
 tree.grow();
- // 12
-console.log(tree.height);
+console.log(tree.height); // 12
 
 // 2)
 let height = 5;
 let health = 100;
 
 let athlete = {
-    height, // `height: height`
-    health // `health: health`
+    height, // height: height
+    health // health: health
 }
 
 console.log(athlete);

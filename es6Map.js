@@ -20,10 +20,6 @@ for(let mapVal of useMap.entries()) {
     console.log(`${mapVal[0]} : ${mapVal[1]}`);
 }
 
-
-console.log();
-
-
 // Set 객체는 유일한 값을 저장하는 객체 => 중복 X
 let testSet = new Set([5, 60, 54, 63, 6]);
 console.log(testSet);

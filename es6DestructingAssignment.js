@@ -1,10 +1,13 @@
 // 비구조화 할당 (Destructing Assignment)
 // 배열이나 객체의 속성을 새로운 변수로 할당
 
-let arr = [6,3,60,30,63,36];
-let [a, b, c, d, e, f] = arr;
+let arr = [6, 3, 60, 30, 63, 36];
 
+let [a, b, c, d, e, f] = arr;
 console.log(`${a} ${b} ${c} ${d} ${e} ${f}`);
+
+let [aa, ...bb] = arr;
+console.log(`${aa} ${bb}`);
 
 
 // 함수의 return 값이 배열인 경우
@@ -27,7 +30,7 @@ let obj = {
     width: 300,
     height: 500
 };
-let {width, height} = obj;
+let { width, height } = obj;
 console.log(width);
 console.log(height);
 
@@ -36,7 +39,7 @@ let newObj = {
     width: 400,
     height: 200
 }
-let {width:w, height:h} = newObj;
+let {width: w, height: h} = newObj;
 
 console.log(w);
 console.log(h);

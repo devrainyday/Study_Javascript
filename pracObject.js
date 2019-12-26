@@ -9,6 +9,10 @@ const fruitList = [
 
 console.log(fruitList[0].name);
 
+for (key in fruitList) {
+  console.log(`key: ${key}, value: ${JSON.stringify(fruitList[key])}`);
+}
+
 const objectKeys = Object.keys(fruitList[0]);
 fruitList.forEach(oArrayE => {
     objectKeys.forEach(e => {

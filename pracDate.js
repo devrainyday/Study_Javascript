@@ -11,9 +11,10 @@ console.log(new Date().toTimeString());
 console.log(new Date().getTimezoneOffset()); // -540 : 9시간 * 60분
 
 console.log(new Date().getFullYear());
-console.log(new Date().getMonth());
+console.log(new Date().getMonth()); // 월: 현재 월 - 1
+console.log(new Date(2019, 12 - 1, 27));
 console.log(new Date().getDate());
-console.log(new Date().getDay()); // 월 : 1
+console.log(new Date().getDay());
 
 console.log(new Date().getHours()); // 시간(24 기준)
 console.log(new Date().getMinutes());

@@ -24,7 +24,7 @@ myFunc('one', 'two', 'third', 'four', 'five');
 function myFuncSpread(x, y, z) {
     console.log(`${x} ${y} ${z}`);
 };
-let args = [3,1,2];
+let args = [3, 1, 2];
 myFuncSpread(...args);
 
 
@@ -41,7 +41,9 @@ let obj2 = {
     len: 10
 };
 let cloneObj = {...obj1, ...obj2}; 
-let cloneObj2 = Object.assign({}, obj1, obj2);
+let cloneObj2 = Object.assign(obj1, obj2);
+let cloneObj3 = Object.assign({}, obj1, obj2);
 // 겹치는 건 가장 마지막에 나온 것으로 덮어씌워짐
 console.log(cloneObj);
 console.log(cloneObj2);
+console.log(cloneObj3);

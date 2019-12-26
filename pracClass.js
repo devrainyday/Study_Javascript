@@ -33,7 +33,7 @@ class Author extends Person {
 
     introduceSelf() {
         super.eat();
-        console.log(`I'm ${this.firstName} ${this.lastName}. and I wrote ${this.bookTitle}`);
+        console.log(`I'm ${this.firstName} ${this.lastName}. and I wrote ${this.bookTitle}, and my type is ${this.type}`);
     }
 }
 

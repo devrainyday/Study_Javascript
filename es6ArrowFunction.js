@@ -28,5 +28,5 @@ const executeError = () => {
 executeError();
 
 // 4)
-const sum = (x, y) => x+y;
+const sum = (x, y) => x + y;
 console.log(sum(5, 10));

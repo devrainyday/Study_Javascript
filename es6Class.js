@@ -20,11 +20,8 @@ class Person {
     // this 없으면 에러남
 
     // 정적 메소드 : 클래스의 인스턴스에서는 호출할 수 없음
-    static info_relationship(a, b) {
-        const aName = a.name;
-        const bName = b.name;
-
-        return `${aName}와(과) ${bName}은(는) 친합니다`;
+    static infoRelationship(a, b) {
+        return `${a.name}와(과) ${b.name}은(는) 친합니다`;
     }
 }
 
@@ -34,16 +31,15 @@ const yejin = new Person('Yejin', 20);
 console.log(yewon.info); // info 뒤 () 없음
 console.log(yejin.info);
 
-console.log(Person.info_relationship(yewon, yejin));
-// 클래스는 호이스팅 되지 않으므로 반드시 선언 이후* 사용해야 함
+console.log(Person.infoRelationship(yewon, yejin));
+// 클래스는 호이스팅 되지 않으므로 반드시 *선언 이후* 사용해야 함
 
 // 클래스에서 메소드를 선언할 때 function 키워드를 붙이지 않아도 됨.
 // 특정 함수에 키워드를 붙이면 클래스 객체에서 사용 가능한 메소드
 // => 프로토타입 메소드 선언 가능
 
-
 // extends 키워드를 이용한 클래스 선언이나 자식 클래스 생성
-class Student extends Person{
+class Student extends Person {
     get info() {
         return this.introduce();
     }
@@ -57,5 +53,5 @@ class Student extends Person{
         return `${this.name}은(는) ${this.age}세 입니다. 또한 학생입니다.`;
     }
 }
-const s1 = new Student('student1', 15);
+const s1 = new Student('My Friend', 15);
 console.log(s1.info);
