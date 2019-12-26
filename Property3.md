@@ -79,7 +79,7 @@ window.bar; //54
   이 때 식별자가 존재하지 않으면 ReferenceError.  
   반대로 단순한 프로퍼티 접근자는 부모 객체 상에서의 해시 룩업 결과를 반환할 것이다. (undefined)  
   
-- attribute initialization
+- attribute initialization  
   모든 새로운 프로퍼티는 디폴트로 **프로퍼티 디스크립터** 를 가진다.  
   그것은 몇몇 프로퍼티 속성을 정의한다. ([[value]]는 가장 명확하다)  
   ECMA3 내부 사용 목적의 속성 : {DontDelete}, {DontEnum}, {ReadOnly}
@@ -110,10 +110,10 @@ window.bar; //54
 - subscript notation  
 `window[foo] = 'hello';`  
 - forgetting to use the var keyword
-```javascript
-var bar = function() {
-    foo = "hello";
-}
-```  
+  ```javascript
+  var bar = function() {
+      foo = "hello";
+  }
+  ```  
 - and rest(2)
   

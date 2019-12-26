@@ -16,7 +16,7 @@ property는 이름(a string)과 값(primitive, method, object reference)
   
 ### property vs 변수
 - 프로퍼티는 공백, 기호, 숫자로 시작하는 유효하지 않는 변수명도 사용할 수 있음.  
-  다만 유효하지 않은 변수명을 프로퍼티 이름을 짓게 되면 점 표기법으로 호출할 수 없음.
+  다만 유효하지 않은 변수명으로 프로퍼티 이름을 짓게 되면 점 표기법으로 호출할 수 없음.
 - property에는 object도 담을 수 있는데, 사실 그 reference를 담고 있다.
 - property는 기본적으로 변수처럼 값을 담는 역할을 하는데, 그 값이 object과 연관이 있다.
   ```javascript

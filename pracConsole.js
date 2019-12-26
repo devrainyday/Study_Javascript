@@ -30,8 +30,9 @@ console.log('%c %o', 'color: yellow', `aaa ${foo}`);
 console.log('%c %o', 'color: yellow', {name: 'woni', age: 28}); // Object {name: "woni", age: 28}
 console.log('%c %s', 'color: yellow', {name: 'woni', age: 38}); // Object
 
-console.assert(true == false, 'false');
-console.assert(true == false, ['false', 'second element']);
+// 맞으면 출력
+console.assert(true === false, 'false');
+console.assert(true === true, ['false', 'second element']);
 
 console.group('firstGroup');
 console.log('a');
