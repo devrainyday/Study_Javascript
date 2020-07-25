@@ -70,7 +70,7 @@ var tab = Object.create(Tab).constructor(...)
 
 ## Classes vs. Closures - Performance [Link](https://medium.com/engineering-livestream/javascript-classes-vs-closures-cf6d6c1473f)
 
-> 이 글은 자바스크립트 크래스와 클로저 패턴(주로 팩토리 클래스 패턴) 사이의 트레이드 오프를 
+> 이 글은 자바스크립트 클래스와 클로저 패턴(주로 팩토리 클래스 패턴) 사이의 트레이드 오프를 
 탐색한다. 이 패턴은 서로 대체할 수 있다.
 
 1. The closure pattern is more lintable than the class pattern.

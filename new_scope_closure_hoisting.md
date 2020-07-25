@@ -1,7 +1,7 @@
 # [자바스크립트 스코프와 클로저](https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19)
 
 ## 스코프 (Scope)
-자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지 정의한다. **전역 스코프(Global Scope)와 지역 스코프(Local Scope)**가 있다.
+자바스크립트에서 스코프란 어떤 변수들에 접근할 수 있는지 정의한다. **전역 스코프(Global Scope)와 지역 스코프(Local Scope)** 가 있다.
 
 지역 스코프는 **함수 스코프와 블록 스코프**로 나뉜다. 
 
